@@ -1,5 +1,6 @@
 package NetworkConnection;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import ModelClass.RecievedData;
@@ -11,6 +12,6 @@ public interface ApiService {
 
     @Headers("Content-Type:application/json")
     @GET("/users")
-    Call<List<RecievedData>>getAll();
+    Call<ArrayList<RecievedData>>getAll();
 
 }
